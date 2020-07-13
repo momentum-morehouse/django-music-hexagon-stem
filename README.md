@@ -28,4 +28,4 @@ A good place to start is planning out your model and making sure you can make an
 ## Getting up and running
 
 
-
+[![Run on Repl.it](https://repl.it/badge/github/momentum-morehouse/django-music-hexagon-stem)](https://repl.it/github/momentum-morehouse/django-music-hexagon-stem)
