@@ -16,9 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.conf import settings
 from django.urls import include, path
+from mymusic import views as 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('mymusic/', include(mymusic.urls'))
 ]
 
 if settings.DEBUG:

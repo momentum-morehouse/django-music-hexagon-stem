@@ -7,5 +7,5 @@ class Album(models.Model):
   title = models.CharField(max_length=255)
   date_released = models.DateField(null=True, blank=True)
 
-  def _str_(self):
+  def __str__(self):
     return f'(self.name)'
