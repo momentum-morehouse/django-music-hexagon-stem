@@ -1,0 +1,19 @@
+<h1> list_albums.html</h1>
+
+
+{% extends "base.html" %}
+
+{% block content %}
+<div class = 'albums'>
+    {% for album in albums %}
+    <div class = 'album'>
+      <p>album.artist_name</p>
+      <p>album.title</p>
+      <p>album.date_released</p>
+    </div>
+    {% endfor %}
+</div>
+
+
+
+{% endblock %}
