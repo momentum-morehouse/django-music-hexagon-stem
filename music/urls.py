@@ -22,6 +22,10 @@ urlpatterns = [
     #index is for homepage, standard  
     path('', mymusic_views.list_albums, name='home'),
     path('admin/', admin.site.urls),
+    path('mymusic/add/', mymusic_views.add_albums, name='add_albums'),
+    path('mymusic/<int:pk>/delete/', mymusic_views.delete_albums, name='delete_albums')
+    #path('mymusic/<int:pk>/', mymusic_views.albums_detail, name='albums_detail'), 
+    #path('mymusic/<int:pk>/details', mymusic_views.add_detail, name="add_detail")
 ]
 
 if settings.DEBUG:

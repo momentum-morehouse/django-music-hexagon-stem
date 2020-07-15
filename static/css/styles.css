@@ -1,0 +1,45 @@
+h1 {
+  text-align: center;
+  color: gold;
+  background: darkgrey;
+}
+
+/* h2 {
+  text-align: center;
+  color: red;
+  background: white
+}
+
+a.add {
+  display: flex;
+  color:black;
+  background: darkgrey;
+  text-align: center;
+}
+
+.everything {
+  display: flex;
+  flex-wrap: wrap; 
+  flex-direction: row;
+  border: 2px solid red;
+  align-items: flex-start;
+  background: lightgrey;
+  justify-content: space-around;
+}
+
+.flex {
+  display: flex;
+  flex-flow: row wrap;
+  text-align: center;
+  color: green;
+  border: 2px solid black;
+  width: 250px;
+  height: 250px;
+  text-align: center;
+}
+
+
+.albums {
+  background: yellow
+  border: 2px solid pink;
+} */
