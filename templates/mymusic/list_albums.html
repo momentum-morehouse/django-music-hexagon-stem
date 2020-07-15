@@ -1,19 +1,35 @@
- <h1> list_albums.html</h1>
-
-
 {% extends "base.html" %}
 
 {% block content %}
- 
-    {% for album in albums %}
-    <div class = 'album'>
-      <p>album.artist_name</p>
-      <p>album.title</p>
-      <p>album.date_released</p>
-    
-    {% endfor %}
-    </div>
 
+<h1><strong>All Albums</strong></h1>
+<p><a class="add" href="{% url 'add_albums' %}">Add New Album</a></p>
 
+  <div class="everything">
+    <div class="albums">
+        <div id="loop">
+          {% for album in albums %}
+          <div class="flex">
+            <div >
+          <h2> "{{ album.title }}" </h2>
+          
 
+          {% if album.artist %}
+            <div ></div>
+            <div>by: {{ album.artis_name }}</div>
+          {% endif %}
+
+          {% if album.released %}
+            <div class="pr2"></div>
+            <div>released: {{ album.date_released }}</div>
+          {% endif %}
+
+          <p><a href="{% url 'delete_albums' pk=albums.pk %}">Delete Album</a></p>
+          </div>
+          </div>
+          <br>
+          {% endfor %}
+        </div> 
+  </div> 
+</div>
 {% endblock %}
