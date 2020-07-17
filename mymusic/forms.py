@@ -1,5 +1,5 @@
 from django import forms
-from .models import Album
+from .models import Album, Details
 
 class albumForm(forms.ModelForm):
     class Meta:
