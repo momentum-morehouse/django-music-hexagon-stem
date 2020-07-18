@@ -9,5 +9,5 @@ class AlbumForm(forms.ModelForm):
             'artist_name',
             'date_released',
         ]
-        widgets = {'date_released': forms.SelectDateWidget()
-        }
+        # widgets = {'date_released': forms.SelectDateWidget()
+        # }
