@@ -29,7 +29,7 @@ urlpatterns = [
     
     path('mymusic/<int:pk>/delete/', mymusic_views.delete_albums, name='delete_albums'),
     
-    #path('mymusic/<int:pk>/', mymusic_views.albums_detail, name='albums_detail'), 
+    # path('mymusic/<int:pk>/', mymusic_views.albums_detail, name='albums_detail'), 
     
     #path('mymusic/<int:pk>/details', mymusic_views.add_detail, name="add_detail"),
 
