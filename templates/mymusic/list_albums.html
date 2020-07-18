@@ -2,17 +2,25 @@
 
 {% block content %}
 
-<h1><strong>All Albums</strong></h1>
-<p><a class="add" href="{% url 'add_albums' %}">Add New Album</a></p>
+<h1><strong>HexagonSTEM Albums</strong></h1>
 
-  <div class="everything">
-    <div class="albums">
-        <div id="loop">
+<p><button><a href="{% url 'add_albums' %}">Add New Album</a></button></p> -->
+
+<!-- <p><button><a class="add" href="{% url 'add_albums' %}">Add New Album</a></button></p> --> -->
+
+  <!-- <div class="everything"> -->
+    <!-- <div class="albums"> -->
+        <!-- <div id="loop"> -->
+    <div class="flex flex-wrap">
+      
           {% for album in albums %}
+
+          <div class="w-33 pa3">
+
           <div class="flex">
-            <div >
+            <!-- <div > -->
           <h2> "{{ album.title }}" </h2>
-          
+          <!-- <img src="{{ album.image_url }}" height='200' width='250'> -->
 
           {% if album.artist %}
             <div ></div>

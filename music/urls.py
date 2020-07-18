@@ -21,12 +21,13 @@ from mymusic import views as mymusic_views
 urlpatterns = [    
     #path('accounts/', include( 'registration.backends.simple.urls')),
     path('admin/', admin.site.urls),
+    
     #index is for homepage, standard  
     path('', mymusic_views.index, name='list_albums'),
     
     path('mymusic/add/', mymusic_views.add_albums, name='add_albums'),
     
-    #path('mymusic/<int:pk>/delete/', mymusic_views.delete_albums, name='delete_albums'),
+    path('mymusic/<int:pk>/delete/', mymusic_views.delete_albums, name='delete_albums'),
     
     #path('mymusic/<int:pk>/', mymusic_views.albums_detail, name='albums_detail'), 
     
