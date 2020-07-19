@@ -36,10 +36,10 @@ def edit_albums(request, pk):
             form.save()
             return redirect(to='list_albums')
 
-    return render(request, "albums/edit_albums.html", {
+    return render(request, "mymusic/edit_albums.html", {
         "form": form, "albums": album})
 
 
 def albums_detail(request, pk):
   album = get_object_or_404(Album, pk=pk)
-  return render(request, "albums/albums_detail.html", {"albums": album})
+  return render(request, "mymusic/albums_detail.html", {"albums": album})

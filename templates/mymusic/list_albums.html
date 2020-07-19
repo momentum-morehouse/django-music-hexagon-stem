@@ -1,32 +1,45 @@
 {% extends "base.html" %}
 
 {% block content %}
+<div class= "everything">
+
 <!-- <body style="background-color: #D7FDEC;"> -->
 <body style=" background: radial-gradient(circle, rgba(215,253,236,1) 0%, rgba(139,237,219,1) 100%);">
 <div class="container">
   <h1>Albums</h1>
 
+
   
   <a href="{% url 'add_albums' %}">Add Album</a>
   
-
-
   <div class="original">
   
     {% for album in albums %}
-    <div class="w-33 pa3">
+    <div class= flex>
+    
       
       <h2>{{ album.title }}</h2>
       <h3>{{ album.artist_name }}</h3>
       <h5>{{ album.date_released }}</h5>
+
+      
+      <img src="{{ album.image_url }}" height='200' width='250'>
+
       
       <a class="blue" href="{% url 'delete_albums' pk=album.pk %}">Delete Album</a>
+      <a class="blue" href="{% url 'edit_albums' pk=album.pk %}">Edit Album</a>
+      <a class="blue" href="{% url 'albums_detail' pk=album.pk %}">Album Details</a>
     </div>
 
-    
+  <br>
     {% endfor %}
-  </div>
-  
+
+  <div/>
+
 </div>
+
+</div>
+</div>
+
 
 {% endblock %}

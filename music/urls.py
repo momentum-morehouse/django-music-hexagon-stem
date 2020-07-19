@@ -29,11 +29,11 @@ urlpatterns = [
     
     path('mymusic/<int:pk>/delete/', mymusic_views.delete_albums, name='delete_albums'),
     
-    # path('mymusic/<int:pk>/', mymusic_views.albums_detail, name='albums_detail'), 
+    path('mymusic/<int:pk>/', mymusic_views.albums_detail, name='albums_detail'), 
     
-    #path('mymusic/<int:pk>/details', mymusic_views.add_detail, name="add_detail"),
+    # path('mymusic/<int:pk>/details', mymusic_views.add_detail, name="add_detail"),
 
-    #path('albums/<int:pk>/edit/', mymusic_views.edit_albums, name='edit_albums'),
+    path('albums/<int:pk>/edit/', mymusic_views.edit_albums, name='edit_albums'),
 ]
 
 if settings.DEBUG:

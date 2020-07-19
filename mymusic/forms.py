@@ -8,6 +8,8 @@ class AlbumForm(forms.ModelForm):
             'title',
             'artist_name',
             'date_released',
+            'image_url',
         ]
-        # widgets = {'date_released': forms.SelectDateWidget()
-        # }
+        widgets = {
+        'date_released': forms.DateInput(format=('%m/%d/%Y'), attrs={'class':'form-control', 'placeholder':'Select a date', 'type':'date'}),
+        }

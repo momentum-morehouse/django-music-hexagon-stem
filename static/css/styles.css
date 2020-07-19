@@ -4,42 +4,20 @@ body {
   background: darkgray;
 }
 
-/* h2 {
-  text-align: center;
-  color: red;
-  background: white
-}
-
-a.add {
+.flex {
   display: flex;
-  color:black;
-  background: darkgrey;
+  flex-wrap: wrap;
   text-align: center;
+  color: green;
+  border: 5px solid black;
+  width: 350px;
+  height: 350px;
 }
 
-.everything {
+.original {
   display: flex;
   flex-wrap: wrap; 
   flex-direction: row;
-  border: 2px solid red;
-  align-items: flex-start;
-  background: lightgrey;
-  justify-content: space-around;
+  justify-content:  space-between;
+  border: 5px solid blue;
 }
-
-.flex {
-  display: flex;
-  flex-flow: row wrap;
-  text-align: center;
-  color: green;
-  border: 2px solid black;
-  width: 250px;
-  height: 250px;
-  text-align: center;
-}
-
-
-.albums {
-  background: yellow
-  border: 2px solid pink;
-} */
